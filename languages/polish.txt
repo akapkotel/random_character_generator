@@ -1,0 +1,5 @@
+polish:
+APPLICATION_WINDOW_TITLE = Losowy Generator Postaci
+QUIT_TITLE = Wyjście
+QUIT_DIALOG = Czy na pewno chcesz wyjść?
+EOF

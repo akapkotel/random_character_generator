@@ -1,1 +1,5 @@
-
+english:
+APPLICATION_WINDOW_TITLE = Random Character Generator
+QUIT_TITLE = Quit
+QUIT_DIALOG = Are you sure you want to quit?
+EOF
