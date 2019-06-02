@@ -2,4 +2,25 @@ polish:
 APPLICATION_WINDOW_TITLE = Losowy Generator Postaci
 QUIT_TITLE = Wyjście
 QUIT_DIALOG = Czy na pewno chcesz wyjść?
+NAME = Imię
+SURNAME = Nazwisko
+SEX = Płeć
+MALE = Mężczyzna
+FEMALE = Kobieta
+ETHNICITY = Pochodzenie etniczne
+AGE = Wiek
+YOUNG = Młody
+ADULT = Dorosły 
+OLD = Stary
+WHITE = Biały
+BLACK = Czarny
+CHINESE = Chińczyk
+JAPANESE = Japończyk
+LATINO = Latynos
+PARAMETRES = Jakiej postaci potrzebujesz?
+PARAMETRES_DESC = Tu określ podstawowe cechy tej osoby, takie, jak płeć, wiek czy pochodzenie etniczne.
+NEW_NAME = Nowe imię!
+NEW_SURNAME = Nowe nazwisko!
+NEW_BOTH = Nowe imie i nazwisko!
+AND =  i 
 EOF

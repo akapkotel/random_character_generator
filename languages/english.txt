@@ -2,4 +2,25 @@ english:
 APPLICATION_WINDOW_TITLE = Random Character Generator
 QUIT_TITLE = Quit
 QUIT_DIALOG = Are you sure you want to quit?
+NAME = Name
+SURNAME = Surname
+SEX = Sex
+MALE = Male
+FEMALE = Female
+ETHNICITY = Ethnicity
+AGE = Age
+YOUNG = Young
+ADULT = Adult 
+OLD = Old
+WHITE = White
+BLACK = Black
+CHINESE = Chinese
+JAPANESE = Japanese
+LATINO = Latino
+PARAMETRES = What character is like?
+PARAMETRES_DESC = Here you can make choice about some basic traits of the character, like sex, ethnicity, etc
+NEW_NAME = New name!
+NEW_SURNAME = New surname!
+NEW_BOTH = New name and surname!
+AND =  
 EOF
