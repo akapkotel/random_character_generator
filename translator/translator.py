@@ -16,7 +16,7 @@ __status__ = "Development"
 import os
 from config_loader.config_loader import load_config_from_file
 
-PLACEHOLDER = "Translation not found!"
+PLACEHOLDER = "<not translated>"
 DICT = None
 INPUTS = None
 
@@ -30,7 +30,6 @@ def setup_translator(files_path: str, file_name: str):
     :param files_path: str -- absolute path to the language files
     :param file_name: str -- name of the language file
     """
-    print(files_path+file_name)
     if check_if_language_file_exists(files_path + file_name):
         prepare_translation_dict(files_path, file_name)
 
@@ -46,7 +45,6 @@ def prepare_translation_dict(files_path: str, file_name: str):
     """
     global DICT, INPUTS
     [DICT] = load_config_from_file(files_path, file_name)
-    print(DICT)
     INPUTS = DICT.keys()
 
 
@@ -64,14 +62,18 @@ def check_if_language_file_exists(file_name: str):
         return False
 
 
-def translate(input_: str):
+def translate(*args):
     """
     Check if input exists in current dict and return it, otherwise, return
     placeholder.
 
-    :return: str -- input text replaced with target-language correspondent
+    :param: args -- string or strings to be translated, if no translation
+    for the input is found <not translated> would be returned
+    :return: str
     """
-    if input_ in INPUTS:
-        return DICT[input_]
-    else:
-        return PLACEHOLDER
+    translation = ""
+    for word in args:
+        analogue = DICT[word] if word in INPUTS else PLACEHOLDER
+        translation += analogue
+    return translation
+
